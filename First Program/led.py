@@ -4,8 +4,13 @@ from time import sleep
 led = LED(17)
 
 while True:
-    led.on()
-    sleep(1)
-    led.off()
-    sleep(1)
+    # Get input from user for LED control (0 for off, 1 for on)
+    user_input = input("Enter 0 to turn LED off or 1 to turn it on: ")
 
+    if user_input == '1':
+        led.on()
+    elif user_input == '0':
+        led.off()
+    else:
+        print("Invalid input. Exiting program.")
+        break
