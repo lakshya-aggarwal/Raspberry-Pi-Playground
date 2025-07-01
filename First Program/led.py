@@ -1,6 +1,6 @@
 from gpiozero import LED
 
-led = LED(17)
+led = LED(4)
 
 while True:
     # Get input from user for LED control (0 for off, 1 for on)
